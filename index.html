@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="ANA_5.ico" type="image/x-icon">    
+    <title>Ana Eu Te Amo</title>
+        
+    <style>
+        .img{
+            width: 1280px;
+            height: 720px;
+            border-radius: 50px;
+        }  
+            
+        .bloco{
+            width: 200px;
+            border: 3px solid black;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .borda{
+            width: 800px;
+            border: 3px solid black;
+            border-radius: 10px;
+            margin: 20px;
+         }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+        }
+
+        fonte{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+        }
+
+        :root {
+        --cor-linha: black;
+        }
+
+        #data-container {
+        color: white;
+        background-color: black; 
+        padding: 1px; 
+        }
+        
+        #data {
+        color: white; 
+        border-bottom: 1px solid black; 
+        padding-bottom: 1px;
+        margin: 0;
+        }  
+</style>
+
+</head>
+
+<body style="background-color: grey;">
+    
+</body>
+
+<body>
+    <center> 
+    <div>
+    <h1>&#x1F49C Ana Eu Te Amo &#x1F49C</h1>
+    <hr>
+</body>
+<body >
+        <div>
+                <picture>
+                    <source media="(max-width: 1200px)" srcset="background_M.png" type="image/png">
+                    <source media="(max-width: 1000px)" srcset="background_P.png" type="image/png">
+                    <img src="background.png" class="img" alt="">
+                </picture>
+            </div>
+        </center>
+</body>
+
+<body>
+    <fonte>
+         <center>
+        <div>
+            <p> Estou eternizando meu amor por você nesse pequeno site em 31/05/2024</p>
+        </div>
+        </center>
+    </fonte>
+</body>
+
+<fonte >
+     <center>
+    <div class="borda" style="background-color: rgb(255, 255, 255);">
+        <code>
+            <p> Ana, você é o amor da minha vida, com você eu aprendi o que significa verdadeiramente amar e ser feliz,  meu sonho é me casar e construir uma família, e envelhecer ao seu lado, pois não vejo nenhum futuro sem a sua companhia. Quase sempre me pego sonhando acordado, vivendo e revivendo nossas experiências, você é meu passado, meu presente e meu futuro, o princípio e fim. Sou incapaz de viver sem você. <em>"Nem se eu tivesse toda a riqueza do universo ou falasse a língua dos anjos, eu não seria nada sem o seu amor"</em>. <strong><mark>Vou te amar para além da eternidade.</mark></strong> (Joa) </p>
+        </code>
+    </div>
+    </center>
+</fonte>
+
+<div id="data-container"> 
+    <center>
+        <p id="data"></p>
+        <script>
+            var hoje = new Date();
+            var dia = hoje.getDate();
+            var mes = hoje.getMonth() + 1;
+            var ano = hoje.getFullYear();
+        
+            var dataFormatada = dia + '/' + mes + '/' + ano;
+        
+            document.getElementById('data').innerHTML = dataFormatada;
+        </script>
+    </center>
+</div>
+
+</html>
