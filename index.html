@@ -7,6 +7,40 @@
     <title>Ana Eu Te Amo</title>
         
     <style>
+
+        .caixa-texto {
+        width: 50%; 
+        margin: 0 auto; 
+        padding: 20px; 
+        border: 1px solid #ccc; /
+        border-radius: 5px; 
+        box-sizing: border-box;
+        }
+
+        .texto-centralizado {
+        text-align: center;
+         }
+
+        .texto-justificado {
+        text-align: justify;
+        }
+
+        .canto-esquerdo {
+        text-align: left;
+        }
+
+        .container {
+         display: flex;
+         justify-content: center; 
+         align-items: center; 
+         height: 100%; 
+        }
+
+        .imagem-container{
+            max-width: auto;
+            height: auto;
+        }
+
         .img{
             width: 1280px;
             height: 720px;
@@ -30,9 +64,9 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
             font-size: 40px;
-        }
+            }
 
-        fonte{
+        .fonte{
             font-family: Arial, Helvetica, sans-serif;
             font-size: 30px;
         }
@@ -61,19 +95,16 @@
     
 </body>
 
-<body>
-    <center> 
-    <div>
-    <h1>&#x1F49C Ana Eu Te Amo &#x1F49C</h1>
-    <hr>
-</body>
+
+    <div class="texto-centralizado" class="texto-justificado">
+        <h1>&#x1F49C Ana Eu Te Amo &#x1F49C</h1>
+        <hr>
+    </div>
+
 <body >
-        <div>
-                <picture>
-                    <source media="(max-width: 1200px)" srcset="background_M.png" type="image/png">
-                    <source media="(max-width: 1000px)" srcset="background_P.png" type="image/png">
+        <center>
+            <div class="imagem-container" class="container">
                     <img src="background.png" class="img" alt="">
-                </picture>
             </div>
         </center>
 </body>
@@ -88,18 +119,17 @@
     </fonte>
 </body>
 
-<fonte >
-     <center>
-    <div class="borda" style="background-color: rgb(255, 255, 255);">
-        <code>
-            <p> Ana, você é o amor da minha vida, com você eu aprendi o que significa verdadeiramente amar e ser feliz,  meu sonho é me casar e construir uma família, e envelhecer ao seu lado, pois não vejo nenhum futuro sem a sua companhia. Quase sempre me pego sonhando acordado, vivendo e revivendo nossas experiências, você é meu passado, meu presente e meu futuro, o princípio e fim. Sou incapaz de viver sem você. <em>"Nem se eu tivesse toda a riqueza do universo ou falasse a língua dos anjos, eu não seria nada sem o seu amor"</em>. <strong><mark>Vou te amar para além da eternidade.</mark></strong> (Joa) </p>
-        </code>
-    </div>
-    </center>
-</fonte>
+   <fonte >
+        <div class="texto-justificado">
+            <div  class="texto-centralizado" class="borda" style="background-color: rgb(255, 255, 255);">
+                <code>
+                    <p> Ana, você é o amor da minha vida, com você eu aprendi o que significa verdadeiramente amar e ser feliz,  meu sonho é me casar e construir uma família, e envelhecer ao seu lado, pois não vejo nenhum futuro sem a sua companhia. Quase sempre me pego sonhando acordado, vivendo e revivendo nossas experiências, você é meu passado, meu presente e meu futuro, o princípio e fim. Sou incapaz de viver sem você. <em>"Nem se eu tivesse toda a riqueza do universo ou falasse a língua dos anjos, eu não seria nada sem o seu amor"</em>. <strong><mark>Vou te amar para além da eternidade.</mark></strong> <br><br> <span class="canto-esquerdo">( Joa )</span></p>
+                </code>
+            </div>
+        </div>
+    </fonte>
 
-<div id="data-container"> 
-    <center>
+<div class="texto-centralizado" id="data-container"> 
         <p id="data"></p>
         <script>
             var hoje = new Date();
@@ -111,7 +141,6 @@
         
             document.getElementById('data').innerHTML = dataFormatada;
         </script>
-    </center>
 </div>
 
 </html>
