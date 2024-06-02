@@ -7,7 +7,6 @@
     <title>Ana Eu Te Amo</title>
         
     <style>
-
         .caixa-texto {
         width: 50%; 
         margin: 0 auto; 
@@ -19,7 +18,7 @@
         .classic { 
             display: flex; 
             align-items: center; 
-	    }
+	}
 
         .texto-centralizado {
         text-align: center;
@@ -68,7 +67,7 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
             font-size: 40px;
-            }
+        }
 
         .fonte{
             font-family: Arial, Helvetica, sans-serif;
@@ -82,7 +81,7 @@
         #data-container {
         color: white;
         background-color: black; 
-        padding: 1px; 
+        padding: 0.01px; 
         }
         
         #data {
@@ -99,7 +98,6 @@
     
 </body>
 
-
     <div class="texto-centralizado" class="texto-justificado">
         <h1>&#x1F49C Ana Eu Te Amo &#x1F49C</h1>
         <hr>
@@ -115,20 +113,23 @@
 
 <body>
     <fonte>
-         <center>
-        <div>
+        
+        <div class="texto-centralizado">
             <p> Estou eternizando meu amor por você nesse pequeno site em 31/05/2024</p>
         </div>
-        </center>
+        
     </fonte>
+   
 </body>
 
    <fonte >
-            <div class="texto-justificado">
-                <div class="borda" class="classic" style="background-color: rgb(255, 255, 255);">
-                    <code>
-                        <p> Ana, você é o amor da minha vida, com você eu aprendi o que significa verdadeiramente amar e ser feliz,  meu sonho é me casar e construir uma família, e envelhecer ao seu lado, pois não vejo nenhum futuro sem a sua companhia. Quase sempre me pego sonhando acordado, vivendo e revivendo nossas experiências, você é meu passado, meu presente e meu futuro, o princípio e fim. Sou incapaz de viver sem você. <em>"Nem se eu tivesse toda a riqueza do universo ou falasse a língua dos anjos, eu não seria nada sem o seu amor"</em>. <strong><mark>Vou te amar para além da eternidade.</mark></strong> <br><br> <span class="canto-esquerdo">( Joa )</span></p>
-                    </code>
+            <div class="container" >
+                <div class="texto-centralizado">
+                    <div  class="borda" class="classic" style="background-color: rgb(255, 255, 255);">
+                        <code>
+                            <p> Ana, você é o amor da minha vida, com você eu aprendi o que significa verdadeiramente amar e ser feliz,  meu sonho é me casar e construir uma família, e envelhecer ao seu lado, pois não vejo nenhum futuro sem a sua companhia. Quase sempre me pego sonhando acordado, vivendo e revivendo nossas experiências, você é meu passado, meu presente e meu futuro, o princípio e fim. Sou incapaz de viver sem você. <em>"Nem se eu tivesse toda a riqueza do universo ou falasse a língua dos anjos, eu não seria nada sem o seu amor"</em>. <strong><mark>Vou te amar para além da eternidade.</mark></strong> <br><br> <span class="canto-esquerdo">( Joa )</span></p>
+                        </code>
+                    </div>
                 </div>
             </div>
     </fonte>
@@ -147,4 +148,20 @@
         </script>
 </div>
 
+<div class="texto-justificado">
+    <div class="texto-centralizado" id="data-container" >
+      <input type="text" id="resultado" readonly>
+      <script>
+          function calcularDiferenca() {
+              var dataEspecifica = new Date('2024-05-31');
+              var dataAtual = new Date();
+    
+              var diferencaEmTempo = dataAtual.getTime() - dataEspecifica.getTime();
+              var diferencaEmDias = Math.ceil(diferencaEmTempo / (1000 * 3600 * 24));
+              document.getElementById('resultado').value = diferencaEmDias + ' dias online';
+            }
+          window.onload = calcularDiferenca;
+      </script>
+    </div>
+</div>
 </html>
